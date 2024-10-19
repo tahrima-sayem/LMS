@@ -54,6 +54,14 @@ class DatabaseSeeder extends Seeder
             'role_id' => $teacherRoleId,
         ]);
 
+        $student = User::create([
+            'fullname' => 'Student Name 1',
+            'email' => 's1@example.com',
+            'contact_number' => '123456789',
+            'password' => Hash::make('password'),
+            'role_id' => $studentRoleId ,
+        ]);
+
         $admin = User::create([
             'fullname' => 'Admin Name 1',
             'email' => 'admin@example.com',

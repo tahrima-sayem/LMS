@@ -13,5 +13,8 @@ class DashboardController extends Controller
     public function gotoAdminDashboard(){
         return view('admins.adminDashboard');
     }
+    public function gotoStudentDashboard(){
+        return view('students.studentDashboard');
+    }
     
 }

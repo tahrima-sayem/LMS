@@ -11,13 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('labwork', function (Blueprint $table) {
+        Schema::create('solution_labwork', function (Blueprint $table) {
             $table->id();
-            $table->string('title'); // Title
+            $table->foreignId('student_id')->constrained('students')->onDelete('cascade'); // FK to Student
+            $table->foreignId('labwork_id')->constrained('labwork')->onDelete('cascade'); // FK to Labwork
             $table->foreignId('course_id')->constrained('courses')->onDelete('cascade'); // FK to Course
-            $table->text('description')->nullable(); // Description
-            $table->binary('file')->nullable(); // File (binary)
-            $table->date('date');
+            $table->integer('mark')->nullable(); // Mark (Optional)
+            $table->string('file')->nullable();
         });
     }
 
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('labwork');
+        Schema::dropIfExists('solution_labwork');
     }
 };

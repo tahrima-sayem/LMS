@@ -7,7 +7,7 @@
         <form class="space-y-6" action="{{ route('distributeCourse') }}" method="POST">
             <div class="text-center mb-6">
                 <img src="{{ asset('/images/notebook.png') }}" alt="Logo" class="w-16 h-16 mx-auto mb-4">
-                <h5 class="text-2xl font-medium text-gray-900 dark:text-white">Distribute Course</h5>
+                <h5 class="text-4xl font-bold text-gray-900 dark:text-white">Distribute Course</h5>
             </div>
             @csrf
             @if(\Illuminate\Support\Facades\Session::has('error'))
@@ -56,7 +56,7 @@
                     @enderror
                 </div>
             </div>
-            <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add new Course</button>
+            <button type="submit" class="w-full text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add new Course</button>
         </form>
     </div>
 </div>

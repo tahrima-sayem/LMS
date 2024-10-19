@@ -9,7 +9,7 @@
     <div class="flex flex-col bg-white border border-green-200 rounded-lg shadow w-full dark:border-gray-700 dark:bg-gray-800 p-6">
 
     <div class="w-full text-center mb-4">
-        <h5 class="text-xl font-bold tracking-tight text-black dark:text-white">
+        <h5 class="text-4xl font-bold tracking-tight text-black dark:text-white">
             <u>Your Routine</u>
         </h5>
     </div>

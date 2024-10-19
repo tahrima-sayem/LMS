@@ -74,7 +74,7 @@
     <div class="container">
         <div class="left-section">
             <h3 class="text-3xl font-bold">Welcome to Learning Management System</h3>
-            <p class="mt-4 text-sm text-white-300">Our Super Shop Management System streamlines your retail operations by offering a comprehensive suite of tools for inventory management, sales tracking, and customer relationship management. With user-friendly dashboards and detailed analytics, you can optimize stock levels, monitor sales performance, and enhance customer satisfaction. Join us in transforming your shop into a modern, and efficient operation.</p>
+            <p class="mt-4 text-sm text-white-300">Our Learning Management System revolutionizes your educational environment by providing a robust set of tools for course management, assignment tracking, and student engagement. With intuitive dashboards and in-depth analytics, you can easily manage courses, monitor student progress, and enhance the learning experience. Join us in transforming your institution into a modern, efficient, and interactive learning hub.</p>
             
             <div class="mt-4">
                 <p class="text-xs text-gray-100">- Made by TeamDev</p>

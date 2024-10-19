@@ -17,7 +17,7 @@ return new class extends Migration
             $table->foreignId('assignment_id')->constrained('assignments')->onDelete('cascade');
             $table->foreignId('course_id')->constrained('courses')->onDelete('cascade');
             $table->integer('mark')->nullable();
-            $table->binary('file')->nullable();
+            $table->string('file')->nullable();
         });
     }
 

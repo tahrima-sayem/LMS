@@ -8,7 +8,7 @@
             <div class="logo">
                 <img src="{{ asset('/images/notebook.png') }}" alt="Logo" class="w-8 h-8">
             </div>
-            <h5 class="text-xl font-medium text-gray-900 dark:text-white">Add Teacher</h5>
+            <h5 class="text-4xl font-bold text-gray-900 dark:text-white">Add Teacher</h5>
             @csrf
             @if(\Illuminate\Support\Facades\Session::has('error'))
                 <div id="error-message" class="px-4 py-2 bg-red-600 text-white rounded-md shadow-sm text-sm mb-5">
@@ -88,7 +88,7 @@
                     @enderror
                 </div>
             </div>
-            <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Sign up new Teacher</button>
+            <button type="submit" class="w-full text-white bg-green-600 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring- font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-600">Sign up new Teacher</button>
         </form>
     </div>
 </div>

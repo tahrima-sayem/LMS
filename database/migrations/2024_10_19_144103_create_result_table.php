@@ -11,13 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('solution_labwork', function (Blueprint $table) {
+        Schema::create('result', function (Blueprint $table) {
             $table->id();
             $table->foreignId('student_id')->constrained('students')->onDelete('cascade'); // FK to Student
-            $table->foreignId('labwork_id')->constrained('labwork')->onDelete('cascade'); // FK to Labwork
-            $table->foreignId('course_id')->constrained('courses')->onDelete('cascade'); // FK to Course
-            $table->integer('mark')->nullable(); // Mark (Optional)
-            $table->binary('file')->nullable();
+            $table->string('level'); // Level (e.g., undergraduate, graduate)
+            $table->string('semester'); // Semester (e.g., Spring 2024)
+            $table->decimal('total_credit', 5, 2); // Total credit as a decimal
+            $table->decimal('gpa', 3, 2)->nullable(false);
         });
     }
 
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('solution_labwork');
+        Schema::dropIfExists('result');
     }
 };

@@ -5,7 +5,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="flex flex-col w-full bg-white border-gray-200 rounded-lg sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700  min-h-full">
                     <form class="space-y-6" action="{{ route('createDegree') }}" method="POST" enctype="multipart/form-data">
-                        <h5 class="text-xl font-medium text-gray-900 dark:text-white">Create Degrees</h5>
+                        <h5 class="text-4xl font-bold text-gray-900 dark:text-white">Create Degrees</h5>
                         @csrf
                         @if(\Illuminate\Support\Facades\Session::has('error'))
                             <div id="error-message" class="px-4 py-2 bg-red-600 text-white rounded-md shadow-sm text-sm mb-5">
@@ -38,7 +38,7 @@
                                 <span class="text-red-500 text-sm">{{ $message }}</span>
                             @enderror
                         </div>
-                        <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Create Degree</button>
+                        <button type="submit" class="w-full text-white bg-green-600 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-600 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-600 dark:focus:ring-green-700">Create Degree</button>
                         
                         
                     </form>

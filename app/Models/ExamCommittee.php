@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class ExamCommittee extends Model
 {
     use HasFactory;
+    protected $table = 'exam_committee';
+    public $timestamps = false; 
 
     protected $guarded = ['created_at', 'updated_at'];
 }

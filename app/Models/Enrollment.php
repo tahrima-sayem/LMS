@@ -10,6 +10,7 @@ class Enrollment extends Model
     use HasFactory;
     protected $table = 'enrollment';
     public $timestamps = false;
+
     protected $fillable = [
         'department',
         'level',
@@ -17,13 +18,13 @@ class Enrollment extends Model
         'start_date',
         'end_date',
     ];
-    public function course()
-    {
-        return $this->belongsTo(Course::class);
-    }
+    protected $casts = [
+        'start_date' => 'date', // Cast to date
+        'end_date' => 'date',   // Cast to date
+    ];
 
-    public function student()
+    public function department()
     {
-        return $this->belongsTo(Student::class);
+        return $this->belongsTo(Department::class, 'department');
     }
 }

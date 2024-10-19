@@ -9,7 +9,7 @@ class Assignment extends Model
 {
     use HasFactory;
     public $timestamps = false;
-    protected $fillable = ['title', 'course_id', 'description', 'file_path', 'deadline'];
+    protected $fillable = ['title', 'course_id', 'description', 'file', 'deadline'];
 
 
     public function course()

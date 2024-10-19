@@ -43,4 +43,8 @@ class Student extends Model
     {
         return $this->hasMany(SolutionLabwork::class, 'Student_id');
     }
+    public function results()
+    {
+        return $this->hasMany(Result::class);
+    }
 }

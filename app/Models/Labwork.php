@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Labwork extends Model
 {
     use HasFactory;
+    protected $table = 'labwork';
+    public $timestamps = false; 
 
     protected $guarded = ['created_at', 'updated_at'];
 

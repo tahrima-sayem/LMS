@@ -1,6 +1,8 @@
 @extends('layouts.master')
 
 @section('content')
+
+
 <div class="container mx-auto">
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
     @foreach($distributions as $distribution)

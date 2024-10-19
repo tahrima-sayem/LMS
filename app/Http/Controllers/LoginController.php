@@ -8,6 +8,7 @@ use App\Http\Requests\LoginRequest;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
 use App\Models\Teacher;
+use App\Models\Student;
 use App\Models\Role;
 use \Illuminate\Support\Facades\Session;
 
@@ -33,14 +34,17 @@ class LoginController extends Controller
 
         Session::put('user_role', $user_role_name);
         Session::put('user_id', $user_id);
-        $teacher = Teacher::where('user_id', $user_id)->first();
-        session(['teacher_id' => $teacher->id]);
+       
 
         if ($user_role_name == 'teacher') {
             //dd($user_role_name);
+            $teacher = Teacher::where('user_id', $user_id)->first();
+            session(['teacher_id' => $teacher->id]);
             return redirect()->route('gotoTeacherDashboard');
         }
         if ($user_role_name == 'student') {
+            $student = Student::where('user_id', $user_id)->first();
+            session(['student_id' => $student->id]);
             return redirect()->route('gotoStudentDashboard');
         }
         if ($user_role_name == 'admin') {

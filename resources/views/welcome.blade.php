@@ -77,7 +77,7 @@
             <p class="mt-4 text-sm text-white-300">Our Learning Management System revolutionizes your educational environment by providing a robust set of tools for course management, assignment tracking, and student engagement. With intuitive dashboards and in-depth analytics, you can easily manage courses, monitor student progress, and enhance the learning experience. Join us in transforming your institution into a modern, efficient, and interactive learning hub.</p>
             
             <div class="mt-4">
-                <p class="text-xs text-gray-100">- Made by TeamDev</p>
+                <p class="text-xs text-gray-100">- Made by Tahrima, Kanij, Jinia</p>
             </div>
         </div>
         <div class="right-section">
